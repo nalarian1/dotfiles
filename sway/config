@@ -83,16 +83,20 @@ bindsym $mod+Escape exec $lock_screen
 #========================================#
 # Keyboard Shortcuts (sajatom) #
 #========================================#
-set $terminal alacritty
+set $terminal xfce4-terminal 
 set $browser librewolf
+set $video_recording exec bash ~/.config/sway/vrecord.sh
+set $print_screen exec bash ~/.config/sway/prsc.sh
 #bindsym $mod+b exec $browser
 bindsym $mod+Return exec $terminal
+bindsym $mod+Shift+r exec $video_recording
+bindsym Print exec $print_screen
 
 
 #========================================#
 # autostart apps #
 #========================================#
-exec discord 
+exec goofcord 
 exec nextcloud
 
 
